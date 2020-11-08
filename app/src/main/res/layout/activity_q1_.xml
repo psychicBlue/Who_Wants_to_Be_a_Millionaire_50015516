@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".q1_Activity">
+
+        <TextView
+            android:id="@+id/q1Text"
+            android:layout_width="204dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/q1"
+            android:textSize="20sp"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="@+id/mEarned1"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/mEarned1"
+            app:layout_constraintTop_toBottomOf="@+id/mEarned1" />
+
+        <RadioGroup
+            android:id="@+id/radGroup"
+            android:layout_width="273dp"
+            android:layout_height="198dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/q1Text"
+            app:layout_constraintStart_toStartOf="@+id/q1Text"
+            app:layout_constraintTop_toBottomOf="@+id/q1Text"
+            app:layout_constraintVertical_bias="0.202">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mEarned1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You earned: $0"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:background="#1EFFFFFF"
+            android:text="@string/confirm"
+            android:textColor="@color/black"
+            android:theme="@style/Platform.MaterialComponents"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/radGroup"
+            app:layout_constraintStart_toStartOf="@+id/radGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radGroup"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
